@@ -1,0 +1,99 @@
+.drawer-btn {
+	display: hidden;
+	padding: 4px;
+	margin-top: 20px;
+	margin-left: 10px;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	z-index: 10;
+	border: 1px solid white;
+	border-radius: 50%;
+	background: var(--secondary-5, #f2f8fe);
+	cursor: pointer;
+}
+.sidebar {
+	background: #fff;
+	display: flex;
+	z-index: 10;
+	height: 90vh;
+	width: 10vw;
+	padding: 16px 20px 20px 30px;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 10px;
+	flex-shrink: 0;
+}
+.menu-close {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90px;
+}
+.icon-box {
+	display: flex;
+	width: 90px;
+	height: 50px;
+	padding: 10px 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	border-radius: 8px;
+}
+.icon-box:last-child {
+	border-top: 1px dotted gray;
+	height: 100px;
+}
+.icon-box:hover {
+	border-radius: 8px;
+	border: 1px solid #dadce0;
+	background: #e5f1fc;
+	cursor: pointer;
+}
+.admin-icon {
+	display: flex;
+	height: 18px;
+	padding: 2px 10px;
+	align-items: center;
+	gap: 6px;
+	font-size: 12px;
+	border-radius: 22px;
+	border: 1px solid var(--accent-new-red, #d63500);
+	color: #d63500;
+	background: var(--accent-red-light, #fbebea);
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+		width: 70vw;
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.menu-close {
+		width: 90%;
+	}
+	.menu-close svg {
+		cursor: pointer;
+	}
+	.icon-box {
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 5px 10px;
+		width: 70%;
+		align-items: center;
+		gap: 10px;
+	}
+	.icon-box:last-child {
+		flex-direction: row-reverse;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.drawer-btn {
+		display: none;
+	}
+}

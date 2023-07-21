@@ -1,0 +1,57 @@
+.assessment-page {
+	background: #fff;
+	height: 100vh;
+	width: 85vw;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #1c4980;
+	border-radius: 0px 0px 12px 12px;
+}
+.assessment-page h5 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.assessment-overview {
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+	align-self: stretch;
+}
+.my-assessment {
+	display: flex;
+	width: 345px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.assessment-icons {
+	display: none;
+	align-items: center;
+	padding-right: 10px;
+}
+.assessment-cards {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+@media only screen and (max-width: 500px) {
+	.assessment-page {
+		width: 100vw;
+	}
+	.assessment-icons {
+		display: flex;
+	}
+	.assessment-cards {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.assessment-overview h5 {
+		display: none;
+	}
+}

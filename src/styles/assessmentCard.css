@@ -1,0 +1,110 @@
+.assessment-card {
+	display: flex;
+	padding: 16px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	border-radius: 12px;
+	border: 1px solid var(--system-stroke-2, #dadce0);
+	background: var(--text-white, #fff);
+}
+.assessment-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-self: stretch;
+}
+
+.assessment-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.assessment-type-name {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.assessment-type-name svg {
+	align-self: center;
+}
+
+.assessment-type-name p {
+	color: var(--primary-50, #8da4bf);
+}
+
+.assessment-type-name h6 {
+	border-right: 1px solid #dadce0;
+	padding-right: 10px;
+}
+.icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-self: stretch;
+}
+
+.assessment-questions {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	padding-top: 10px;
+	border-top: 1px dashed var(--system-stroke-2, #dadce0);
+}
+
+.duration-questions {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+}
+.share-links {
+	display: flex;
+	height: 30px;
+	padding: 2px 8px 2px 6px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+
+.duration-questions h6 p {
+	font-weight: 500;
+}
+
+.share-btn {
+	display: flex;
+	height: 30px;
+	padding: 2px 8px 2px 6px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	border-radius: 50px;
+	border: 1px solid var(--text-100, #1c4980);
+	background: var(--text-white, #fff);
+}
+.share-btn:hover {
+	cursor: pointer;
+}
+.share-people {
+	display: flex;
+	width: 25px;
+	height: 25px;
+	padding: 5px 6px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: #fff;
+	border-radius: 32.728px;
+	border: 1px solid var(--text-white, #fff);
+	background: var(--pastel-neon-blue, #6548ee);
+}

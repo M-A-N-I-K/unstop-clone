@@ -1,0 +1,124 @@
+.assessment-info {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	gap: 1px;
+	border-radius: 12px;
+	border: 1px solid var(--system-stroke-2, #dadce0);
+}
+.total-assessment {
+	display: flex;
+	width: 162px;
+	padding: 16px 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: 0;
+	align-self: stretch;
+	border-right: 1px solid #dadce0;
+	border-spacing: 15px;
+}
+
+h6 {
+	font-size: large;
+	font-weight: 600;
+}
+svg:hover {
+	cursor: pointer;
+}
+.assessment-number {
+	display: flex;
+	width: 80px;
+	height: 40px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.assessment-number svg {
+	padding: 10px;
+	border-radius: 8px;
+	background: var(--accent-purple-light, #ebe8fd);
+}
+
+.assessment-number h6 {
+	padding-left: 10px;
+	font-size: x-large;
+	font-weight: 700;
+}
+
+.candidates-info {
+	display: flex;
+	width: 250px;
+	padding: 16px 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: 0;
+	align-self: stretch;
+	border-right: 1px solid #dadce0;
+	border-spacing: 15px;
+}
+.candidates-number {
+	display: flex;
+	width: 100%;
+	padding: 10px 0;
+	justify-content: space-between;
+}
+.total-count {
+	display: flex;
+	flex-direction: column;
+	padding-right: 10px;
+	border-right: 1px solid #dadce0;
+}
+.total-count h6:first-child,
+.remaining-count h6:first-child {
+	height: 30px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.total-count span,
+.remaining-count span {
+	color: var(--status-success, #05c165);
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.total-count h6,
+.remaining-count h6 {
+	font-size: 12px;
+}
+
+.candidates-source {
+	display: flex;
+	width: 300px;
+	padding: 16px 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: 0;
+	align-self: stretch;
+	border-right: 1px solid #dadce0;
+	border-spacing: 15px;
+}
+.total-purpose {
+	display: flex;
+	width: 150px;
+	padding: 16px 50px 16px 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: 0;
+	align-self: stretch;
+}
+.purpose-number {
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.purpose-number h6 {
+	padding-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+	.assessment-info {
+		display: none;
+	}
+}
